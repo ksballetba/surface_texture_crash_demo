@@ -43,9 +43,15 @@ App crash certainly when surfaceTexture BufferSize width or height too big.
 ## Flutter Doctor
 
 [✓] Flutter (Channel stable, 2.5.3, on macOS 11.6 20G165 darwin-x64, locale zh-Hans-CN)
+
     • Flutter version 2.5.3 at /Users/chenyu/Environment/flutter2.0/flutter
+    
     • Upstream repository https://github.com/flutter/flutter.git
+    
     • Framework revision 18116933e7 (10 days ago), 2021-10-15 10:46:35 -0700
+    
     • Engine revision d3ea636dc5
+    
     • Dart version 2.14.4
+    
     • Pub download mirror https://pub.dartlang.org
