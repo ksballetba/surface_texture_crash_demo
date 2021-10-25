@@ -23,8 +23,8 @@ Texture Widget could continue work and display when when surfaceTexture BufferSi
 **Actual results:** 
 App crash certainly when surfaceTexture BufferSize width or height too big.
 
-<details>
-  <summary>Logs</summary>
+## Logs
+
 ```
 2021-10-25 15:50:52.467 6786-6818/com.alibaba.surface_texture_crash_demo E/ture_crash_dem: [SurfaceTexture-0-6786-0] bindTextureImage: error binding external image: 0x502
 2021-10-25 15:50:52.468 6786-6818/com.alibaba.surface_texture_crash_demo E/flutter: [ERROR:flutter/fml/platform/android/jni_util.cc(182)] java.lang.RuntimeException: Error during updateTexImage (see logcat for details)
