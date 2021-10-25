@@ -23,6 +23,34 @@ Texture Widget could continue work and display when when surfaceTexture BufferSi
 **Actual results:** 
 App crash certainly when surfaceTexture BufferSize width or height too big.
 
+## Code
+
+#### dart
+
+```dart
+  static Future<void> setSurfaceBufferSize({int surfaceHeight = 0}) async {
+    await _channel
+        .invokeMethod('setSurfaceBufferSize', {'surfaceHeight': surfaceHeight});
+  }
+}
+```
+
+
+
+#### Kotlin
+
+```kotlin
+private fun setSurfaceBufferSize(surfaceHeight: Int) {
+  mSurfaceTexture.setDefaultBufferSize(1080,surfaceHeight)
+  val canvas = mSurface.lockCanvas(null)
+  canvas.drawRGB(255, 230, 15)
+  mSurface.unlockCanvasAndPost(canvas)
+}
+```
+
+
+
+
 ## Logs
 
 ```
